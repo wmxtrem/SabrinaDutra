@@ -6,8 +6,8 @@
     <title>Sabrina Dutra | Nail Designer</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Fontes Profissionais: Montserrat e Playfair Display -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Fontes: Montserrat, Playfair Display e Rethink Sans para preços -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Rethink+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
     <!-- FontAwesome para Ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- AOS Animation Library -->
@@ -21,6 +21,10 @@
         }
         .font-serif-custom {
             font-family: 'Playfair Display', serif;
+        }
+        /* Classe dedicada para usar a fonte Rethink Sans nos preços */
+        .font-price {
+            font-family: 'Rethink Sans', sans-serif;
         }
         .btn-rose {
             background-color: #C59B8B;
@@ -92,10 +96,10 @@
                 </div>
             </div>
 
-            <!-- FOTO DA PROFISSIONAL -->
+            <!-- FOTO DA PROFISSIONAL (sabrina1.jpg) -->
             <div class="relative flex justify-center" data-aos="fade-left" data-aos-duration="1000">
                 <div class="relative w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-[#EFE6DC]">
-                    <img src="sabrina.jpg" alt="Sabrina Dutra Nail Designer" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-500">
+                    <img src="sabrina1.jpg" alt="Sabrina Dutra Nail Designer" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-500">
                     <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-6 text-white text-center">
                         <h3 class="font-serif-custom text-xl font-bold">Sabrina Dutra</h3>
                         <p class="text-xs tracking-widest text-[#EFE6DC] uppercase">Nail Designer Profissional</p>
@@ -120,7 +124,7 @@
         </div>
     </section>
 
-    <!-- SERVIÇOS & VALORES -->
+    <!-- SERVIÇOS & VALORES (Preços com Rethink Sans) -->
     <section id="servicos" class="py-24 max-w-7xl mx-auto px-6">
         <div class="text-center max-w-2xl mx-auto mb-16 space-y-4" data-aos="fade-up">
             <span class="text-[#C59B8B] text-xs font-bold uppercase tracking-widest">CATÁLOGO DE VALORES</span>
@@ -136,13 +140,13 @@
                         <div class="w-12 h-12 rounded-xl bg-[#F7F2EC] text-[#C59B8B] flex items-center justify-center text-xl">
                             <i class="fa-solid fa-hand-sparkles"></i>
                         </div>
-                        <span class="font-serif-custom text-2xl font-bold text-[#4A3B32]">R$ 45,00</span>
+                        <span class="font-price text-2xl font-bold text-[#4A3B32]">R$ 45,00</span>
                     </div>
                     <h3 class="font-serif-custom font-bold text-xl text-[#4A3B32] mb-1">Pé e Mão Simples</h3>
                     <p class="text-xs text-[#6B5B52] mb-4">Cutilagem e esmaltação tradicional caprichada para pés e mãos.</p>
                     <div class="bg-[#F7F2EC] p-3 rounded-xl mb-4 text-xs text-[#4A3B32] flex justify-between items-center">
                         <span>Com decoração:</span>
-                        <strong class="text-[#C59B8B]">R$ 50,00</strong>
+                        <strong class="font-price text-sm text-[#C59B8B]">R$ 50,00</strong>
                     </div>
                 </div>
                 <a href="https://wa.me/5521973544427?text=Olá%20Sabrina,%20gostaria%20de%20agendar%20Pé%20e%20Mão!" target="_blank" class="w-full bg-[#EFE6DC] hover:bg-[#C59B8B] hover:text-white text-[#4A3B32] font-semibold py-3 rounded-xl transition-all text-center text-sm flex items-center justify-center gap-2">
@@ -157,7 +161,7 @@
                         <div class="w-12 h-12 rounded-xl bg-[#F7F2EC] text-[#C59B8B] flex items-center justify-center text-xl">
                             <i class="fa-solid fa-spa"></i>
                         </div>
-                        <span class="font-serif-custom text-2xl font-bold text-[#4A3B32]">R$ 30,00</span>
+                        <span class="font-price text-2xl font-bold text-[#4A3B32]">R$ 30,00</span>
                     </div>
                     <h3 class="font-serif-custom font-bold text-xl text-[#4A3B32] mb-1">Só Pedicure Simples</h3>
                     <p class="text-xs text-[#6B5B52] mb-4">Cuidado completo para os pés, com cutilagem e esmaltação impecável.</p>
@@ -174,7 +178,7 @@
                         <div class="w-12 h-12 rounded-xl bg-[#F7F2EC] text-[#C59B8B] flex items-center justify-center text-xl">
                             <i class="fa-solid fa-hand"></i>
                         </div>
-                        <span class="font-serif-custom text-2xl font-bold text-[#4A3B32]">R$ 30,00</span>
+                        <span class="font-price text-2xl font-bold text-[#4A3B32]">R$ 30,00</span>
                     </div>
                     <h3 class="font-serif-custom font-bold text-xl text-[#4A3B32] mb-1">Só Manicure (Mão)</h3>
                     <p class="text-xs text-[#6B5B52] mb-4">Manicure completa das mãos com acabamento e brilho duradouro.</p>
@@ -191,7 +195,7 @@
                         <div class="w-12 h-12 rounded-xl bg-[#F7F2EC] text-[#C59B8B] flex items-center justify-center text-xl">
                             <i class="fa-solid fa-wand-magic-sparkles"></i>
                         </div>
-                        <span class="font-serif-custom text-2xl font-bold text-[#4A3B32]">R$ 40,00</span>
+                        <span class="font-price text-2xl font-bold text-[#4A3B32]">R$ 40,00</span>
                     </div>
                     <h3 class="font-serif-custom font-bold text-xl text-[#4A3B32] mb-1">Unhas Postiças</h3>
                     <p class="text-xs text-[#6B5B52] mb-4">Aplicação de unhas postiças com acabamento natural, resistência e beleza.</p>
@@ -208,7 +212,7 @@
                         <div class="w-12 h-12 rounded-xl bg-[#F7F2EC] text-[#C59B8B] flex items-center justify-center text-xl">
                             <i class="fa-solid fa-mug-hot"></i>
                         </div>
-                        <span class="font-serif-custom text-2xl font-bold text-[#4A3B32]">R$ 100,00</span>
+                        <span class="font-price text-2xl font-bold text-[#4A3B32]">R$ 100,00</span>
                     </div>
                     <h3 class="font-serif-custom font-bold text-xl text-[#4A3B32] mb-1">Spa dos Pés</h3>
                     <p class="text-xs text-[#6B5B52] mb-4">Tratamento relaxante profundo para renovação, hidratação intensa, esfoliação e cuidado especial com os pés.</p>
@@ -220,7 +224,7 @@
         </div>
     </section>
 
-    <!-- PLANOS MENSAIS -->
+    <!-- PLANOS MENSAIS (Preços com Rethink Sans) -->
     <section id="planos" class="py-24 bg-[#F7F2EC] border-y border-[#EFE6DC]">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto mb-16 space-y-4" data-aos="fade-up">
@@ -234,7 +238,7 @@
                 <div class="bg-white border border-[#D5BCAC]/50 p-8 rounded-3xl card-hover shadow-sm flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
                     <div>
                         <div class="text-xs font-bold text-[#C59B8B] uppercase tracking-wider mb-2">Plano Essencial</div>
-                        <div class="font-serif-custom text-3xl font-bold text-[#4A3B32] mb-4">R$ 120,00 <span class="text-xs text-[#6B5B52] font-normal">/ mês</span></div>
+                        <div class="font-price text-3xl font-bold text-[#4A3B32] mb-4">R$ 120,00 <span class="text-xs text-[#6B5B52] font-normal font-sans">/ mês</span></div>
                         <ul class="space-y-3 text-sm text-[#6B5B52] mb-8">
                             <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#C59B8B]"></i> 4 Manicures completas</li>
                             <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#C59B8B]"></i> 1 atendimento por semana</li>
@@ -252,7 +256,7 @@
                     </div>
                     <div>
                         <div class="text-xs font-bold text-[#C59B8B] uppercase tracking-wider mb-2">Plano Completo</div>
-                        <div class="font-serif-custom text-3xl font-bold text-[#4A3B32] mb-4">R$ 150,00 <span class="text-xs text-[#6B5B52] font-normal">/ mês</span></div>
+                        <div class="font-price text-3xl font-bold text-[#4A3B32] mb-4">R$ 150,00 <span class="text-xs text-[#6B5B52] font-normal font-sans">/ mês</span></div>
                         <ul class="space-y-3 text-sm text-[#6B5B52] mb-8">
                             <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#C59B8B]"></i> 4 Manicures semanais</li>
                             <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#C59B8B]"></i> 1 Pedicure inclusa no mês</li>
@@ -267,7 +271,7 @@
                 <div class="bg-white border border-[#D5BCAC]/50 p-8 rounded-3xl card-hover shadow-sm flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
                     <div>
                         <div class="text-xs font-bold text-[#C59B8B] uppercase tracking-wider mb-2">Plano Premium</div>
-                        <div class="font-serif-custom text-3xl font-bold text-[#4A3B32] mb-4">R$ 170,00 <span class="text-xs text-[#6B5B52] font-normal">/ mês</span></div>
+                        <div class="font-price text-3xl font-bold text-[#4A3B32] mb-4">R$ 170,00 <span class="text-xs text-[#6B5B52] font-normal font-sans">/ mês</span></div>
                         <ul class="space-y-3 text-sm text-[#6B5B52] mb-8">
                             <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#C59B8B]"></i> 4 Manicures semanais</li>
                             <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#C59B8B]"></i> 2 Pedicures inclusas no mês</li>
